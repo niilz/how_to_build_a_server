@@ -1,0 +1,26 @@
+In the Tutorial the browser gets simulatet with
+another shell using telnet.
+
+#####Code######
+$ telnet localhost 8888
+Trying 127.0.0.1 …
+Connected to localhost.
+GET /hello HTTP/1.1
+
+HTTP/1.1 200 OK
+Hello, World!
+############
+
+Newer MacOS systems don't have telnet.
+Instead install netcat.
+(check if already installed by typing "which nc")
+
+and type:
+
+#####code#####
+nc localhost 8888
+GET /hello HTTP/1.1
+
+HTTP/1.1 200 OK
+Hello, World!
+#############
